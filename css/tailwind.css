@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Left Section */
+  .navigation {
+    @apply flex
+                px-2
+                py-2.5
+                font-semibold
+                text-clr100 text-xl
+                hover:bg-clr600
+                hover:text-clr300
+                rounded-full
+                transition
+                duration-300
+                ease-in-out
+                focus:text-clr300;
+  }
+  .tweet-btn {
+    @apply rounded-full
+                bg-clr200
+                py-2.5
+                px-10
+                mt-2
+                font-bold
+                text-clr100
+                w-full
+                hover:bg-clr300
+                rounded-full
+                transition
+                duration-300
+                ease-in-out
+                focus:outline-none;
+  }
+  .profile {
+    @apply rounded-full
+            mr-2
+            px-6
+            py-1
+            text-clr100
+            mt-6
+            hover:bg-clr600
+            rounded-full
+            transition
+            duration-300
+            ease-in-out;
+  }
+  /* Main Section */
+  .header {
+    @apply flex
+            justify-between
+            place-items-center
+            ml-5
+            py-2
+            text-clr100
+            font-bold
+            text-lg;
+  }
+  .textarea {
+    @apply resize-none
+                mt-0
+                text-linesClr
+                bg-clr900
+                font-medium
+                text-lg
+                w-full
+                text-base
+                focus:outline-none
+                focus:text-clr100;
+  }
+  .input-buttons {
+    @apply text-center h-7 w-7 text-clr400 cursor-pointer;
+  }
+  .tweet-btn-form {
+    @apply py-2
+                    px-6
+                    bg-clr200
+                    font-bold
+                    mb-2
+                    text-clr100
+                    cursor-pointer
+                    hover:bg-clr300
+                    transition
+                    duration-300
+                    ease-in-out
+                    rounded-full;
+  }
+}
