@@ -20,7 +20,7 @@
     />
   </head>
   <body class="bg-clr900">
-    <section class="flex items-start justify-between">
+    <section class="flex items-start justify-between overflow-hidden">
       <!-- left section -->
       <div
         class="
@@ -28,11 +28,11 @@
           h-screen
           overflow-y-hidden
           top-0
-          w-3/12
-          border-linesClr border
+          w-4/12
+          border-linesClr border-r
         "
       >
-        <div class="px-14 py-1">
+        <div class="px-10 py-1">
           <!-- Twitter Logo -->
           <svg
             viewBox="0 0 24 24"
@@ -208,7 +208,7 @@
         </div>
         <!-- Profile -->
         <div class="profile">
-          <a href="#" class="flex-shrink-0 group block">
+          <a href="#" class="flex-shrink-0">
             <div class="flex items-center ml-6">
               <div>
                 <img
@@ -227,9 +227,9 @@
                     font-semibold
                   "
                 >
-                  NO SANA NO LAYP
+                  sanake 🐍
                 </p>
-                <p class="text-sm leading-5 text-grayClr">@minatozakisana</p>
+                <p class="text-sm text-grayClr">@minatozakisana</p>
               </div>
               <div class="flex flex-row ml-10 text-2xl">
                 <i class="bx bx-dots-horizontal-rounded"></i>
@@ -254,10 +254,10 @@
           <h1>Home</h1>
         </div>
         <!-- Form Main -->
-        <div class="flex border-t border-b border-linesClr w-full pt-3 pl-10">
+        <div class="flex border-t border-b-4 border-linesClr w-full pt-3 pl-4">
           <div class="m-2 w-10 py-1">
             <img
-              class="inline-block h-10 w-10 rounded-full"
+              class="inlineblock h-10 w-10 rounded-full"
               src="https://pbs.twimg.com/profile_images/1328389192699797505/UY4H4Dl5.jpg"
               alt=""
             />
@@ -335,6 +335,44 @@
             </div>
           </div>
         </div>
+        <!--first tweet start-->
+        <div class="flex p-4 pb-0 pl-6">
+          <a
+            href="#"
+            class="hover:bg-clr700 rounded-md transition duration-300"
+          >
+            <div class="flex items-center">
+              <div>
+                <img
+                  class="inline-block h-10 w-10 rounded-full"
+                  src="https://pbs.twimg.com/profile_images/1328389192699797505/UY4H4Dl5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="ml-3">
+                <p class="text-base leading-6 font-semibold text-clr100">
+                  sanake 🐍
+                  <span class="text-sm text-grayClr font-normal">
+                    @minatozakisana • 16 April
+                  </span>
+                </p>
+                <p class="text-clr100 mt-0 font-light">
+                  Stan twice mga ulul! 🤬
+                  <span class="text-clr300 font-regular">#TWICE #트와이스</span>
+                </p>
+              </div>
+            </div>
+            <div class="grid mt-3">
+              <div class="w-4/5 place-self-center">
+                <img
+                  src="./img/twice-tweet-pic.jpg"
+                  alt=""
+                  class="rounded-lg"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
 
       <!-- right section -->
@@ -344,10 +382,89 @@
           h-screen
           overflow-y-auto
           top-0
-          w-3/12
-          border-linesClr border
+          w-4/12
+          border-linesClr border-l
         "
-      ></div>
+      >
+        <div class="px-5 mt-2">
+          <button type="submit" class="absolute ml-4 mt-3 mr-4 text-grayClr">
+            <svg
+              class="h-4 w-4 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 56.966 56.966"
+              style="enable-background: new 0 0 56.966 56.966"
+              xml:space="preserve"
+              width="512px"
+              height="512px"
+            >
+              <path
+                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+              />
+            </svg>
+          </button>
+
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Twitter"
+            class="
+              bg-blue-800
+              h-10
+              px-10
+              w-full
+              rounded-full
+              border-0
+              bg-cardClr
+              text-grayClr text-sm
+            "
+          />
+          <div
+            class="
+              rounded-lg
+              bg-cardClr
+              overflow-hidden
+              shadow-lg
+              mt-4
+              px-4
+              pt-4
+              text-clr100
+            "
+          >
+            <h1 class="font-bold pb-2 text-lg">Trends for you</h1>
+            <hr class="text-linesClr" />
+            <div>
+              <span class="text-sm text-grayClr">Technology • Trending</span>
+              <h3 class="font-semibold text-clr100">HTML is a PL</h3>
+              <span class="text-sm text-grayClr">6M Tweets</span>
+              <hr class="text-linesClr mt-2" />
+              <span class="text-sm text-grayClr">Music • Trending</span>
+              <h3 class="font-semibold text-clr100">TWICE「Kura Kura」</h3>
+              <span class="text-sm text-grayClr">10.2M Tweets</span>
+              <hr class="text-linesClr mt-2" />
+              <span class="text-sm text-grayClr">Technology • Trending</span>
+              <h3 class="font-semibold text-clr100">TailwindCSS</h3>
+              <span class="text-sm text-grayClr">106K Tweets</span>
+              <hr class="text-linesClr mt-2" />
+              <span class="text-sm text-grayClr">Technology • Trending</span>
+              <h3 class="font-semibold text-clr100">Bootstrap</h3>
+              <span class="text-sm text-grayClr">3 Tweets</span>
+              <hr class="text-linesClr mt-2" />
+              <span class="text-sm text-grayClr">KPOP • Trending</span>
+              <h3 class="font-semibold text-clr100">NO SANA NO LAYP</h3>
+              <span class="text-sm text-grayClr">7.2M Tweets</span>
+              <hr class="text-linesClr mt-2" />
+            </div>
+          </div>
+          <span class="text-sm text-grayClr ml-5"
+            >STAN TWICE • Tailwind • @2021 Kel Pande</span
+          >
+        </div>
+      </div>
     </section>
   </body>
 </html>

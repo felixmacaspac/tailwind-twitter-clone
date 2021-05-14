@@ -15,6 +15,7 @@ module.exports = {
       clr100: "#FFFFFF", // White Color
       linesClr: "#38444D", // border lines
       grayClr: "#8899A6", // username color
+      cardClr: " #253341",
     },
   },
   variants: {
