@@ -20,18 +20,9 @@
     />
   </head>
   <body class="bg-clr900">
-    <section class="flex items-start justify-between overflow-hidden">
+    <section class="section-container">
       <!-- left section -->
-      <div
-        class="
-          sticky
-          h-screen
-          overflow-y-hidden
-          top-0
-          w-4/12
-          border-linesClr border-r
-        "
-      >
+      <div class="left-container">
         <div class="px-10 py-1">
           <!-- Twitter Logo -->
           <svg
@@ -254,7 +245,7 @@
           <h1>Home</h1>
         </div>
         <!-- Form Main -->
-        <div class="flex border-t border-b-4 border-linesClr w-full pt-3 pl-4">
+        <div class="form-container">
           <div class="m-2 w-10 py-1">
             <img
               class="inlineblock h-10 w-10 rounded-full"
@@ -376,16 +367,7 @@
       </div>
 
       <!-- right section -->
-      <div
-        class="
-          stick
-          h-screen
-          overflow-y-auto
-          top-0
-          w-4/12
-          border-linesClr border-l
-        "
-      >
+      <div class="right-section">
         <div class="px-5 mt-2">
           <button type="submit" class="absolute ml-4 mt-3 mr-4 text-grayClr">
             <svg
@@ -412,29 +394,9 @@
             type="search"
             name="search"
             placeholder="Search Twitter"
-            class="
-              bg-blue-800
-              h-10
-              px-10
-              w-full
-              rounded-full
-              border-0
-              bg-cardClr
-              text-grayClr text-sm
-            "
+            class="search-bar"
           />
-          <div
-            class="
-              rounded-lg
-              bg-cardClr
-              overflow-hidden
-              shadow-lg
-              mt-4
-              px-4
-              pt-4
-              text-clr100
-            "
-          >
+          <div class="trending-section">
             <h1 class="font-bold pb-2 text-lg">Trends for you</h1>
             <hr class="text-linesClr" />
             <div>
