@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+  /* Section Container */
+  .section-container {
+    @apply flex items-start justify-between overflow-hidden;
+  }
   /* Left Section */
+  .left-container {
+    @apply sticky
+          h-screen
+          overflow-y-hidden
+          top-0
+          w-4/12
+          border-linesClr border-r;
+  }
   .navigation {
     @apply flex
                 px-2
@@ -58,6 +70,9 @@
             font-bold
             text-lg;
   }
+  .form-container {
+    @apply flex border-t border-b-4 border-linesClr w-full pt-3 pl-4;
+  }
   .textarea {
     @apply resize-none
                 mt-0
@@ -86,5 +101,35 @@
                     duration-300
                     ease-in-out
                     rounded-full;
+  }
+
+  /* Right Section */
+  .right-section {
+    @apply stick
+          h-screen
+          overflow-y-auto
+          top-0
+          w-4/12
+          border-linesClr border-l;
+  }
+  .search-bar {
+    @apply bg-blue-800
+              h-10
+              px-10
+              w-full
+              rounded-full
+              border-0
+              bg-cardClr
+              text-grayClr text-sm;
+  }
+  .trending-section {
+    @apply rounded-lg
+              bg-cardClr
+              overflow-hidden
+              shadow-lg
+              mt-4
+              px-4
+              pt-4
+              text-clr100;
   }
 }
